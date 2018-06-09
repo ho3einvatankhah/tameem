@@ -1,0 +1,8 @@
+<h1>Home</h1>
+<p>You're logged in with Admin!</p>
+<div>
+  <ul>
+    <li *ngFor="let user of users">{{user.firstName}} {{user.lastName}}</li>
+  </ul>
+</div>
+<p><a [routerLink]="['/login']">Logout</a></p>
